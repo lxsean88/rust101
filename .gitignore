@@ -1,1 +1,13 @@
 rust-live-training/
+/target/
+**/*.dSYM/
+
+**/*.rlib
+
+**/*.rmeta
+
+Cargo.lock
+
+**/*.rs.bk
+
+hello/target
