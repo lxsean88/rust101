@@ -11,3 +11,7 @@ Cargo.lock
 **/*.rs.bk
 
 hello/target/
+
+**/target/
+
+**/main
