@@ -8,6 +8,10 @@ fn add_things() -> u32{
     sumi as u32
 }
 
+fn modifies(x: &mut i32) {
+    *x += 1;
+}
+
 fn main() {
     println!("Hello Sean!");
     mod1::fn2();
@@ -17,4 +21,11 @@ fn main() {
 
     //basic loop, add 1 to 100
     println!("sum: {:?}", add_things());
+
+    //modify fn parameter
+    println!("modified value: {:?}", {
+        let mut x = 1;
+        modifies(&mut x);
+        x
+    });
 }
